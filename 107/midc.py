@@ -16,3 +16,4 @@ ax[1] . set_xlim(30,100)
 ax[1] . set_xlabel(r'RH (%)', size = 14)
 
 plt.savefig('midc.png', dpi = 300)
+plt.show()
