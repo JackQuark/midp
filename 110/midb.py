@@ -39,7 +39,7 @@ ax[1] . set_title('mixing ratio')
 ax[1] . set_xlabel('[g/kg]')
 ax[1] . set_xlim(0, 20)
 ax[1] . set_xticks(np.linspace(0, 20, 5))
-ax[1] . legend([r'$q_vsp$', r'$q_0$', 'LCL'])
+ax[1] . legend([r'$q_{vsp}$', r'$q_0$', 'LCL'])
 #
 ax[2] . plot(P, z, 'k-')
 ax[2] . set_title('pressure')
