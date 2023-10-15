@@ -17,8 +17,8 @@ Theta = Tp[:] * (1000/P[:]) ** (Rd/Cp)
 es    = 6.11 * np.exp( (Lv/Rv)*((1/273.15) - (1/Tp)) )
 qvsp  = E*es / ( P - (1-E)*es )
 
-iqv   = np.where(q0 >= qvsp, qvsp, np.nan)
-LCL   = np.nanargmax(iqv)
+iqv   = np.argwhere(q0 >= qvsp)
+LCL   = np.min(iqv)
 
 f, ax = plt.subplots(1, 3, sharey = 'row')
 #
@@ -46,6 +46,3 @@ ax[2] . set_title('pressure')
 ax[2] . set_xlabel('[hPa]')
 ax[2] . set_xlim(200, 1000)
 ax[2] . set_xticks(np.linspace(200, 1000, 5))
-
-
-
