@@ -9,8 +9,8 @@ E =  0.820
 F =  1.600
 n = np.arange(0, 10) 
 
-X[0] = float(input('input X\u2081:'))
-Y[0] = float(input('input Y\u2081:'))
+X[0] = float(input(r'input $X_i$:'))
+Y[0] = float(input(r'input $Y_i$:'))
 
 for i in range(9):
     X[i+1] = round(A*X[i]+B*Y[i]+C, 3)
