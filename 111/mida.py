@@ -17,4 +17,4 @@ for i in range(9):
     Y[i+1] = round(D*X[i]+E*Y[i]+F, 3)
 
 data = np.column_stack((n, X, Y))
-np.savetxt('Aout_format.txt', data, fmt='%3d %5.3f %5.3f', header='n X     Y')
+np.savetxt('mida.txt', data, fmt='%3d %5.3f %5.3f', header='n X     Y')
