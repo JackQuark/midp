@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import sys
 """
 """
-#input x0 and y0
+#input x0 and y0 
 x0 = int(sys.argv[1])
 y0 = int(sys.argv[2])
 
